@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta charset="utf-8">
+
+     <script language="javascript">
+		var oHead = document.getElementsByTagName('head').item(0);
+        var oScript = document.createElement("script");
+        oScript.type = "text/javascript";
+        oScript.src = "content://alitrip/javascript/checkTrip.js";
+        oHead.appendChild(oScript);
+</script>
+
+<script language='javascript'>
+	function startNativeService(uri){
+	alert('uri = ' + uri);
+	}
+	
+</script>
+
+<script language='javascript'>
+	
+	function callback_to_web(obj){
+	alert('uri = ' + obj);
+	}
+	
+	function disp_prompt()
+  {
+  	var name=prompt("请输入您的名字","Bill Gates")
+  	if (name!=null && name!="")
+    {
+    document.write("你好，" + name + "！今天过得好吗？")
+    }
+  }
+</script>
+
+
+
+</head>
+<body>
+<input type="button" onclick="disp_prompt()" value="显示一个提示框" />
+
+<br>
+<input type="text" value="" class="trip-form-text-normal trip-form-search-normal J_suggestionSearch" placeholder="请输入城市或景点名" autocomplete="off" maxlength="20">
+
+ <INPUT name="test native toast" type="button" value="test native" onClick="window.js_b.test()"><br>
+
+ 
+ <INPUT name="test native toast"  value="test native" "><br>
+
+<h1><a href= "taobaotravel://h5_homepage" >jump</a></h1>
+ 
+ 
+
+
+</body>
+</html>
